@@ -10,10 +10,10 @@ body{
 }
 .header{
     display: flex;
-    font-size: 40px;
+    font-size: 2.5rem;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 200px;
+    padding: 1.25rem 5%;
 }
 div.header-logo{
     flex: 1;
@@ -30,19 +30,23 @@ nav{
 }
 nav a{
     color: white;
-    font-size: 30px;
+    font-size: 2rem;
     text-decoration: none;
 }
 section.home-content{
     display: flex;
-    margin-top: 240px;
+    margin-top: 10rem;
     justify-content: center;
 }
 
 div.home_img img{
-    width: 700px;
-    height: 700px;
-    border-radius: 350px;
+    width: 50vw; 
+    height: 50vw;
+    max-width: 700px;
+    max-height: 700px;
+    min-height: 100px;
+    min-width: 100px;
+    border-radius: 50%;
 }
 div.intro{
     display: flex;
@@ -62,4 +66,29 @@ span.stress{
 }
 p.simple-intro{
     font-size: 60px;
+}
+@media (max-width: 1000px) {
+    div.home_img img{
+        width: 40vw; 
+        height: 40vw;
+    }
+    .header{
+        font-size: 5vw;
+    }
+    nav a{
+        font-size: 2.5vw;
+    }
+    div.intro{
+        gap: 3vw;
+        padding-left: 8vw;
+    }
+    p.greeting {
+        font-size: 5vw; /* smaller on phone */
+    }
+    p.simple-intro {
+        font-size: 3.5vw;
+    }
+    p.description{
+        font-size: 1.8vw;
+    }
 }
