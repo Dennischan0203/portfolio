@@ -41,16 +41,19 @@ section.contact-content {
 .intro{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 28px;
 }
 .Contact_me{
     font-size: 60px;
 }
 .description{
-    font-size: 25px;
+    font-size: 24px;
 }
 
 div.info{
-    margin-top: 50px;
-    font-size: 40px;
+    margin-top: 52px;
+    font-size: 36px;
+}
+.contact_info{
+    font-weight: bold;
 }
