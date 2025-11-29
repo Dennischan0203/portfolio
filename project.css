@@ -60,10 +60,15 @@ div.project{
 div.project_img{
     flex: 1;
     display: flex;
+    flex-direction: column;
     border-right: 4px solid black;
     height: 100%;
     align-items: center;
+    justify-content: center;
     padding-right: 50px;
+}
+div.project_img .project_name{
+    margin-bottom: 12px;
 }
 div.project_img img{
     width: 350px;
@@ -99,6 +104,10 @@ div.pj-intro {
         height: 100vw;
         padding: 0px 1%;
         gap: 1vw;
+    }
+    div.project_img .project_name{
+        margin-top: 1vw;
+        margin-bottom: 1vw;
     }
     div.project_img img{
         width: 100%;
